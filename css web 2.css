@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.badan-utama {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header {
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 5px solid #e67e22;
+}
+
+header h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.navigasi {
+    background: #2c3e50;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navigasi ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigasi li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navigasi li a:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+.navigasi li a.active {
+    background: #e67e22;
+}
+
+/* Tambahkan CSS ini ke file css web 2.css Anda */
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+
+/* Layout columns */
+.menu-kiri, .menu-tengah, .menu-kanan {
+    padding: 1rem;
+    float: left;
+}
+
+.menu-kiri {
+    width: 25%;
+}
+
+.menu-tengah {
+    width: 50%;
+}
+
+.menu-kanan {
+    width: 25%;
+}
+
+/* Content boxes */
+.kotak {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.kotak:hover {
+    transform: translateY(-5px);
+}
+
+.kotak h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e67e22;
+}
+
+.kotak img {
+    width: 100%;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+/* Date styling */
+.tanggal-posting {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Buttons */
+.tombol {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.tombol-pesan {
+    background: #e74c3c;
+    color: white;
+}
+
+.tombol-lengkap {
+    background: #3498db;
+    color: white;
+}
+
+.tombol:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Menu articles */
+.menu-artikel ul {
+    list-style: none;
+}
+
+.menu-artikel li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.menu-artikel a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu-artikel a:hover {
+    color: #e67e22;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-kiri, .menu-tengah, .menu-kanan {
+        width: 100%;
+        float: none;
+    }
+
+    .navigasi ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    header h2 {
+        font-size: 2em;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kotak {
+    animation: fadeIn 0.5s ease-out;
+}
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.badan-utama {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #e60012, #ff1a1a);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.logo img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+/* Navigation */
+.navigasi {
+    background: #800000;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navigasi ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigasi li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navigasi li a:hover {
+    background: #FFD700;
+    color: #800000;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 2rem;
+}
+
+.section-title {
+    text-align: center;
+    color: #800000;
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover .menu-image img {
+    transform: scale(1.05);
+}
+
+.menu-details {
+    padding: 1.5rem;
+}
+
+.menu-details h3 {
+    color: #800000;
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.3em;
+    color: #e60012;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: #fff3f3;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu-content ul {
+    list-style: none;
+}
+
+.menu-content li {
+    padding: 0.3rem 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.menu-content li:before {
+    content: "•";
+    color: #FFD700;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Special Notice Section */
+.special-notice {
+    background: #fff3f3;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.notice-image {
+    max-width: 300px;
+    margin: 0 auto 1rem;
+}
+
+.notice-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.special-notice h3 {
+    color: #800000;
+    font-size: 1.5em;
+}
+
+/* Contact Section */
+.contact-section {
+    background: #800000;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-section h3 {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #4a0000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navigasi ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    header h2 {
+        font-size: 2em;
+    }
+}

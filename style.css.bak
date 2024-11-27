@@ -1,0 +1,46 @@
+/*selector menggunakan name tag */
+h1	{
+	color:yellow;
+	font-family: bleeding cowboys;
+	font:bold;
+
+}
+	p {
+		color:white;
+	}
+
+/* selector dengan menggunakan nama class boleh dari satu */
+	.saya {
+		color:white;
+		background:black;
+	}
+	.text-putih {
+		color:white;
+	}
+	.bg-color {
+		background:pink;
+	}
+/* selector dengan menggunakan nama id */
+	#header {
+		background: blue;
+		color: white;
+		height: 10px;
+		padding: 10px;
+	}
+/* selector dengan menggunakan atribut */
+	input[type-text] {
+		background:none;
+		color:cyan;
+		padding:10px;
+		border:1px solid cyan;
+	}
+/* selector dengan menggunakan universal */
+	* {
+		border:0px solid grey;
+		background-color:black;
+	}
+/* selector dengan menggunakan psedo-class */
+	a:hover, a:active {
+		background-color:red;
+		color:red;
+	}

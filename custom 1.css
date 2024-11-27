@@ -1,0 +1,211 @@
+/* Neumorphic Futuristic Modern CSS */
+:root {
+  --bg-color: #e0e5ec;
+  --text-color: #1a1a2e;
+  --highlight-color: #4a69bd;
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 2rem 0;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--highlight-color);
+  text-shadow: 2px 2px 4px var(--shadow-light), -2px -2px 4px var(--shadow-dark);
+}
+
+.menu {
+  margin: 2rem 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--bg-color);
+  border-radius: 50px;
+  box-shadow: 
+    6px 6px 12px var(--shadow-dark), 
+    -6px -6px 12px var(--shadow-light);
+}
+
+.menu ul li {
+  margin: 0 1rem;
+}
+
+.menu ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: var(--highlight-color);
+  box-shadow: 
+    inset 4px 4px 8px var(--shadow-dark), 
+    inset -4px -4px 8px var(--shadow-light);
+}
+
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.kiri, .kanan {
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  background: var(--bg-color);
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 
+    8px 8px 16px var(--shadow-dark), 
+    -8px -8px 16px var(--shadow-light);
+  transition: all 0.3s ease;
+}
+
+.border:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    12px 12px 20px var(--shadow-dark), 
+    -12px -12px 20px var(--shadow-light);
+}
+
+.jarak {
+  padding: 2rem;
+}
+
+h3 {
+  color: var(--highlight-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.btn {
+  background-color: var(--bg-color);
+  color: var(--highlight-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 
+    6px 6px 12px var(--shadow-dark), 
+    -6px -6px 12px var(--shadow-light);
+}
+
+.btn:hover {
+  color: var(--bg-color);
+  background-color: var(--highlight-color);
+  box-shadow: 
+    inset 4px 4px 8px rgba(0,0,0,0.2), 
+    inset -4px -4px 8px rgba(255,255,255,0.1);
+}
+
+.kanan h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.undecor {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 
+    4px 4px 8px var(--shadow-dark), 
+    -4px -4px 8px var(--shadow-light);
+}
+
+.undecor:hover {
+  color: var(--highlight-color);
+  box-shadow: 
+    inset 4px 4px 8px var(--shadow-dark), 
+    inset -4px -4px 8px var(--shadow-light);
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, var(--shadow-dark), var(--shadow-light));
+  margin: 1.5rem 0;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: auto;
+  box-shadow: 
+    0 -8px 16px var(--shadow-dark);
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  
+  .menu ul {
+    flex-wrap: wrap;
+  }
+
+  .menu ul li {
+    margin: 0.5rem;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+}

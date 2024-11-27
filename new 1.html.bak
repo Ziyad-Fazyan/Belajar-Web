@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Makanan Enak</title>
+</head>
+<body>
+    <h1 align="center">Tabel Makanan Enak</h1>
+    <table align="center"width="60%" height="20%" border="1" style="border-collapse:collapse">
+        <tr>
+            <th rowspan="2" bgcolor="yellow">NO</th>
+            <th rowspan="2" bgcolor="blue">NAMA KOTA</th>
+            <th colspan="3" bgcolor="orange">MAKANAN ENAK</th>
+        </tr>
+        <tr align="center" bgcolor="bluelight">
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>KLATEN</td>
+            <td>GUDEG</td>
+            <td>AYAM</td>
+            <td>NASGOR</td>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td>SOLO</td>
+            <td>MIE</td>
+            <td>SATE</td>
+            <td>TENGKLENG</td>
+        </tr>
+        <tr align="center">
+            <td>3</td>
+            <td>BOYOLALI</td>
+            <td>SUSU</td>
+            <td>SOTO</td>
+            <td>KARE</td>
+        </tr>
+    </table>
+</body>
+</html>
